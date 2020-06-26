@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@mipmap/talk"
+        android:drawablePadding="5dp"
+        android:text="评论99+"
+        android:gravity="center"
+        android:textColor="#8989a1"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_zhuanfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/zhuanfa"
+        android:textColor="#8989a1"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_zhuanfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/tv_zhuanfa"
+        android:src="@mipmap/share_icon" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/tv_comment"
+        android:id="@+id/tv_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="54dp"
+        android:drawableLeft="@mipmap/agree"
+        android:text="30"
+        android:drawablePadding="5dp"
+        android:gravity="bottom"
+        android:textSize="12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/tv_comment" />
+
+
+</RelativeLayout>

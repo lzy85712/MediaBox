@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"
+            android:text="No.0007"
+            android:textColor="#4a4d6f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="John Denver·28 Oct"
+            android:textColor="#a1a3b5"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/v_div"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginTop="10dp"
+            android:background="#f2f2f2" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_div"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="二手转卖"
+            android:textColor="#a1a3b5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/v_div"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="99+"
+            android:textColor="#575979"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_div"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/tv_more"
+            android:drawableLeft="@mipmap/upt_gray"
+            android:drawablePadding="3dp"
+            android:text="28"
+            android:textColor="#575979"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_div"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/tv_upt"
+            android:src="@mipmap/car_gray" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

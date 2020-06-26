@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="5dp"
+            android:text="HARD LOVE"
+            android:textColor="#575979" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="10dp"
+            android:text="Alex Thomas·28 Oct"
+            android:textColor="#a1a3b5"
+            android:textSize="10dp" />
+
+        <View
+            android:id="@+id/v_div"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#e1e1e1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/music_icon" />
+
+        <TextView
+            android:id="@+id/tv_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/v_div"
+            android:layout_below="@+id/v_div"
+            android:layout_marginTop="5dp"
+            android:text="拥有NO.2399/2400/2401"
+            android:textColor="#8989a1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_owner"
+            android:layout_below="@+id/tv_owner"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="转卖NO.2399"
+            android:textColor="#8989a1"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sell"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="99+"
+            android:textColor="#dcaa4e"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sell"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/tv_more"
+            android:text="28"
+            android:textColor="#dcaa4e"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_alignBottom="@+id/tv_upt"
+            android:layout_toLeftOf="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/upt_icon" />
+
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_pic_one"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true" />
+</RelativeLayout>

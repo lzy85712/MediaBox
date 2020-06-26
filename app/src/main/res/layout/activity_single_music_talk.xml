@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg"
+    app:ignore="NamespaceTypo">
+
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/iv_back_oval" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/iv_back" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/corner_view_gold_15radio">
+
+        <TextView
+            android:id="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@mipmap/upt_icon"
+            android:drawablePadding="3dp"
+            android:text="28"
+            android:textColor="#dcaa4e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tv_upt"
+            android:text="99+"
+            android:textColor="#dcaa4e"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/more" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_music_talk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/corner_view_white_5radio">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="14dp"
+                        android:text="Annie’s Song"
+                        android:textColor="#4a4d6f"
+                        android:textSize="18sp" />
+
+                    <com.azhong.ratingbar.RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        a_zhon:clickable="false"
+                        a_zhon:image_height="20dp"
+                        a_zhon:image_padding="1.5dp"
+                        a_zhon:image_width="20dp"
+                        a_zhon:star="5"
+                        a_zhon:star_count="5"
+                        a_zhon:star_img="@mipmap/star_mine"
+                        a_zhon:unstar_img="@mipmap/empty_star" />
+
+                    <TextView
+                        android:id="@+id/tv_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="42dp"
+                        android:text="评价人：3134"
+                        android:textColor="#a1a3b5" />
+
+                    <View
+                        android:id="@+id/v_div"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/ratingbar"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#e1e1e1" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_middle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v_div"
+                        android:layout_marginTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/iv_flower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/flower" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/iv_flower"
+                            android:text="我对歌曲的评价"
+                            android:textColor="#4a4d6f" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:text="2 MIN AGO"
+                            android:textColor="#a1a3b5"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_eva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_middle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="The film unfolds in a tense drama that keeps the audience on the edge of their seats."
+                        android:textColor="#a1a3b5" />
+
+                    <com.azhong.ratingbar.RatingBar
+                        android:id="@+id/ratingbar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_eva"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        a_zhon:clickable="false"
+                        a_zhon:image_height="20dp"
+                        a_zhon:image_padding="1.5dp"
+                        a_zhon:image_width="20dp"
+                        a_zhon:star="4"
+                        a_zhon:star_count="5"
+                        a_zhon:star_img="@mipmap/star_mine"
+                        a_zhon:unstar_img="@mipmap/empty_star" />
+
+                    <TextView
+                        android:id="@+id/tv_xiugai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_eva"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/ratingbar2"
+                        android:text="@string/xiugai"
+                        android:textColor="#575979"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_eva_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_xiugai"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@mipmap/talk"
+                        android:drawablePadding="5dp"
+                        android:text="评论99+"
+                        android:textColor="#8989a1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_xiugai"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tv_eva_number"
+                        android:drawableLeft="@mipmap/agree"
+                        android:drawablePadding="5dp"
+                        android:text="30"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/lv_music_talk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_head"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:divider="@null"
+                    android:dividerHeight="10dp"
+                    android:listSelector="#00000000" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_talk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/corner_view_gray_5radio">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@mipmap/white_plane" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

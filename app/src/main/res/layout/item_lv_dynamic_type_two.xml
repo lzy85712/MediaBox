@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dynamic_header" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="The film unfolds in a tense drama that keeps the audience on the edge of their seats.#Annie’s Song·NO.0834#"
+        android:textColor="#8989a1" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/dynamic_test_pic"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.azhong.ratingbar.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_eva"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            a_zhon:clickable="false"
+            a_zhon:image_height="18dp"
+            a_zhon:image_padding="1.5dp"
+            a_zhon:image_width="18dp"
+            a_zhon:star="5"
+            a_zhon:star_count="5"
+            a_zhon:star_img="@mipmap/star_mine"
+            a_zhon:unstar_img="@mipmap/empty_star" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/dynamic_footer" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#ffffff" />
+</LinearLayout>

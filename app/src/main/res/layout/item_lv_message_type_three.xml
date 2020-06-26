@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/message_check_selector"
+        android:button="@null"
+        android:checked="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/cb_check"
+        android:background="@drawable/corner_view_gray_5radio">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/zhuanmaishangjiachenggong"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="22dp"
+            android:text="13 Oct  08:25AM"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_status"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="13dp"
+            android:text="您拥有的作品Annie’s Song/NO.2988，转卖上架成功。"
+            android:textColor="#ffffff" />
+
+        <View
+            android:id="@+id/v_div"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/tv_body"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="11.5dp"
+            android:background="#B9BDCB" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_div"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="20dp"
+            android:text="立即签发"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/v_div"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="23dp"
+            android:src="@mipmap/white_arrow_next" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:src="@mipmap/red_shape" />
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="5dp"
+            android:text="HARD LOVE"
+            android:textColor="#575979" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Alex Thomas·28 Oct·发行量900/售767/余132/二手34"
+            android:textColor="#a1a3b5"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/music_icon" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/mine_like"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/iv_upt"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="已买3个"
+            android:textSize="10dp"
+            android:textColor="#a2a8ba"
+            android:layout_toLeftOf="@+id/iv_like"
+            android:layout_marginRight="30dp"
+            android:layout_alignBottom="@+id/iv_like"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_star"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/upt_icon" />
+
+        <TextView
+            android:id="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_star"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/iv_upt"
+            android:text="28"
+            android:textColor="#dcaa4e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_star"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_upt"
+            android:text="99+"
+            android:textColor="#dcaa4e"
+            android:textSize="9dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_below="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.azhong.ratingbar.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                a_zhon:clickable="false"
+                a_zhon:image_height="12dp"
+                a_zhon:image_padding="1dp"
+                a_zhon:image_width="12dp"
+                a_zhon:star="0"
+                a_zhon:star_count="5"
+                a_zhon:star_img="@mipmap/star_mine"
+                a_zhon:unstar_img="@mipmap/star_gray" />
+
+            <TextView
+                android:id="@+id/tv_star_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="（677）"
+                android:textColor="#a2a8ba"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_pic_one"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true" />
+</RelativeLayout>

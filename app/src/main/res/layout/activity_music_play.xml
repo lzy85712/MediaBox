@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main_bg"
+    android:background="@mipmap/bless_test_bg">
+
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/iv_back_oval" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/iv_back" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/corner_view_gold_15radio">
+
+        <TextView
+            android:id="@+id/tv_upt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@mipmap/upt_icon"
+            android:drawablePadding="3dp"
+            android:text="28"
+            android:textColor="#dcaa4e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tv_upt"
+            android:text="99+"
+            android:textColor="#dcaa4e"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/more" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_middle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/play_icon" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/music_icon"
+            android:drawablePadding="5dp"
+            android:text="0:36"
+            android:textColor="#e0e1e8"
+            android:textSize="12sp" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            app:bsb_bubble_color="#ffffff"
+            app:bsb_bubble_text_color="@color/colorPrimaryDark"
+            app:bsb_max="319"
+            app:bsb_min="0"
+            app:bsb_progress="36"
+            app:bsb_second_track_color="#4a4d6f"
+            app:bsb_track_color="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="5:19"
+            android:textColor="#e0e1e8"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/riv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/test"
+            app:riv_border_width="0dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riv_head"
+            android:layout_marginTop="5dp"
+            android:text="Annie’s Song"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/tv_song_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song_name"
+            android:layout_marginTop="10dp"
+            android:text="The film unfolds in a tense drama that keeps the audience on the edge of their seats."
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_song_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song_desc"
+            android:layout_marginTop="10dp"
+            android:text="28 Oct·发行量900/售767/余132/二手34"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <com.azhong.ratingbar.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song_detail"
+            android:layout_marginTop="15dp"
+            a_zhon:clickable="false"
+            a_zhon:image_height="18dp"
+            a_zhon:image_padding="2dp"
+            a_zhon:image_width="18dp"
+            a_zhon:star="4"
+            a_zhon:star_count="5"
+            a_zhon:star_img="@mipmap/star_mine"
+            a_zhon:unstar_img="@mipmap/empty_star" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ratingbar"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ratingbar"
+            android:text="（234）"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

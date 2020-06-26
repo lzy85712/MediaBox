@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/iv_back_oval" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/iv_back" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/myaddress"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="130dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="67dp"
+            android:background="#d8d8d8"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/tv_share_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_show_qrcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:drawableLeft="@mipmap/share_qrcode"
+            android:drawablePadding="5dp"
+            android:text="分享地址"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_show_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/corner_view_gray_5radio_bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:paddingTop="20dp"
+            android:text="0w 2833 0923 2hs2 2234 8999 0923 2hs2 2234 8999 34jy"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/riv_head"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test"
+        app:riv_border_width="0dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+
+</RelativeLayout>

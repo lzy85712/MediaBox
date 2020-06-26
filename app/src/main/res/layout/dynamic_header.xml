@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/riv_head"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test"
+        app:riv_border_width="0dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/riv_head"
+        android:text="Gilbert Grant"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:background="@drawable/corner_view_lv_5radio"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="LV9"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="19dp"
+        android:text="2 MIN AGO"
+        android:textColor="#a1a3b5"
+        android:textSize="12sp" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "qukuailian.mediabox.com.mediabox"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.+'
+    // 各种下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    // popwindow
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+    // 日志输出助手
+    compile 'com.apkfuns.logutils:library:1.5.1.1'
+    // 网络请求
+    compile 'org.xutils:xutils:3.3.36'
+    // 图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // 黄油刀
+    compile 'com.jakewharton:butterknife:8.1.0'
+    // 滚动选择
+    compile 'com.wx.wheelview:wheelview:1.3.3'
+    // 立体旋转
+    // compile 'com.sheaye:cube-pager:1.0.0'
+    // 圆角图片
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    // 标签控件
+    compile 'com.nex3z:flow-layout:1.2.2'
+    // 二维码
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    // 权限请求管理
+    compile "com.lovedise:permissiongen:0.0.6"
+    // 进度条
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    // 星星评分
+    compile 'com.azhon:ratingbar:1.3.0'
+    // 仿IOS开关按钮
+    compile 'ch.ielse:switchbutton:1.0.1'
+    // seekbar
+    compile 'com.xw.repo:bubbleseekbar:3.16-lite'
+
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/corner_view_white_5radio"
+    android:minHeight="183dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/test"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius_top_left="5dp"
+            app:riv_corner_radius_top_right="5dp"
+            app:riv_mutate_background="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/play_icon" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.5dp"
+        android:layout_marginTop="5.5dp"
+        android:text="HARD LOVE"
+        android:textColor="#575979" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.5dp"
+        android:layout_marginRight="5.5dp"
+        android:layout_marginTop="5dp"
+        android:text="Alex Thomas·28 Oct·发行量900/售767/余132/二手34"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.azhong.ratingbar.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_eva"
+            android:gravity="center_vertical"
+            a_zhon:clickable="false"
+            a_zhon:image_height="12dp"
+            a_zhon:image_padding="1dp"
+            a_zhon:image_width="12dp"
+            a_zhon:star="0"
+            a_zhon:star_count="5"
+            a_zhon:star_img="@mipmap/star_mine"
+            a_zhon:unstar_img="@mipmap/star_gray" />
+
+        <TextView
+            android:id="@+id/tv_star_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="（677）"
+            android:textColor="#a2a8ba"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.5dp"
+            android:src="@mipmap/upt_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="28"
+            android:textColor="#dcaa4e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="99+"
+            android:textColor="#dcaa4e"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.5dp"
+            android:src="@mipmap/video_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>

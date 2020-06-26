@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/item_sign_bg">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="No.0003"
+            android:textColor="#4a4d6f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_content_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Elizabeth Buchanan ·"
+                android:textColor="#4a4d6f"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/tv_content_one"
+                android:src="@mipmap/upt_no_sign" />
+
+            <TextView
+                android:id="@+id/tv_content_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="2355·31 Jan 2017"
+                android:textColor="#8989a1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_middle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="留言:"
+            android:textColor="#727594"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/leave_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_middle"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_leave"
+            android:text="你好，我非常喜欢你的作品，请给我一个生日的祝福吧！祝你生日快乐，祝你生日快乐。"
+            android:textColor="#727594"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="126dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/line_div" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_div"
+            android:layout_below="@+id/iv_div"
+            android:layout_marginTop="10dp"
+            android:text="@string/sign"
+            android:textColor="#d0021b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/iv_div"
+            android:layout_below="@+id/iv_div"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/arrow_next_mine" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

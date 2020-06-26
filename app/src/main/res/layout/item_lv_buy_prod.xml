@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="5dp"
+            android:text="HARD LOVE"
+            android:textColor="#575979" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Alex Thomas·28 Oct·发行量900/售767/余132/二手34"
+            android:textColor="#a1a3b5"
+            android:textSize="10dp" />
+        <TextView
+            android:layout_below="@+id/tv_content"
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:textSize="10dp"
+            android:textColor="#7a7d9a"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_alignLeft="@+id/tv_content"
+            android:text="拥有NO.2399/2400/2401/2899·转卖中NO.2399·待我签发NO.2400/2899"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/iv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/music_icon" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/iv_type"
+            android:layout_marginTop="70dp"
+            android:layout_alignLeft="@+id/iv_type"
+            android:src="@mipmap/arrow_next_mine"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_pic_one"
+        app:riv_border_width="0dip"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true" />
+
+    <ImageView
+        android:id="@+id/iv_red_shape"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/red_shape" />
+
+</RelativeLayout>

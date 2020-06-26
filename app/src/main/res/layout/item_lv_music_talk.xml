@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/dynamic_header" />
+
+    <TextView
+        android:id="@+id/tv_music_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5dp"
+        android:text="The film unfolds in a tense drama that keeps the audience on the edge of their seats."
+        android:textColor="#a2a8ba"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_music_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/dynamic_test_pic"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true" />
+
+        <GridView
+            android:id="@+id/gv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="10dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:verticalSpacing="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.azhong.ratingbar.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_pic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        a_zhon:clickable="false"
+        a_zhon:image_height="20dp"
+        a_zhon:image_padding="1.5dp"
+        a_zhon:image_width="20dp"
+        a_zhon:star="5"
+        a_zhon:star_count="5"
+        a_zhon:star_img="@mipmap/star_mine"
+        a_zhon:unstar_img="@mipmap/empty_star" />
+
+    <TextView
+        android:id="@+id/tv_eva_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/talk"
+        android:drawablePadding="5dp"
+        android:text="评论99+"
+        android:textColor="#8989a1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ratingbar"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tv_eva_number"
+        android:drawableLeft="@mipmap/agree"
+        android:drawablePadding="5dp"
+        android:text="30"
+        android:textSize="14sp"
+        android:id="@+id/tv_agree" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/ratingbar"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff" />
+</RelativeLayout>

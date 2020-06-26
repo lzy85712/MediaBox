@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="52dip"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_market"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/rb_tab_market_selector"
+            android:text="@string/market" />
+
+        <RadioButton
+            android:id="@+id/rb_friend"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/rb_tab_friend_selector"
+            android:text="@string/friend" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/rb_tab_message_selector"
+            android:text="@string/message" />
+
+        <RadioButton
+            android:id="@+id/rb_dynamic"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/rb_tab_dynamic_selector"
+            android:text="@string/dynamic" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/rb_tab_mine_selector"
+            android:text="@string/mine" />
+    </RadioGroup>
+</LinearLayout>

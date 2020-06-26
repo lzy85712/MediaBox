@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/message_check_selector"
+        android:button="@null"
+        android:checked="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/cb_check"
+        android:background="@drawable/corner_view_white_5radio">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginTop="18dp"
+            android:text="购买下单成功"
+            android:textColor="#696c8d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="22dp"
+            android:text="13 Oct  08:25AM"
+            android:textColor="#8a8a8f"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_status"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="11.5dp"
+            android:layout_marginTop="13dp"
+            android:text="您购买的作品Annie’s Song，支付成功，等待对方签发"
+            android:textColor="#a1a3b5" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_body"
+            android:layout_marginLeft="7.5dp"
+            android:text=" - UPT28"
+            android:textColor="#a1a3b5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_body"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_number"
+            android:text="89"
+            android:textColor="#a1a3b5" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:src="@mipmap/red_shape" />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg">
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fadongtai"
+        android:textColor="#575979"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/tv_send"
+        android:src="@mipmap/send" />
+
+    <TextView
+        android:id="@+id/tv_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/discover"
+        android:textColor="#4a4d6f"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_discover"
+        android:text="@string/attention"
+        android:textColor="#a1a3b5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_my_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21.5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tv_attention"
+        android:text="@string/mysend"
+        android:textColor="#a1a3b5"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_discover"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/friend_indicator" />
+
+    <ImageView
+        android:id="@+id/iv_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_attention"
+        android:layout_below="@+id/tv_discover"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/friend_indicator"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_my_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_my_send"
+        android:layout_below="@+id/tv_discover"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/friend_indicator"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_discover"
+        app:srlEnableLoadmore="true"
+        app:srlEnableLoadmoreWhenContentNotFull="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/lv_dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="#00000000" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</RelativeLayout>
